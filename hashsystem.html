@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    Hello world
+       
+
+<input type="text" id="myText" placeholder="Some text...">
+
+<p>Click the "Try it" button to get the text in the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="geek">1</p>
+        <script>
+          function myFunction() {
+  var p = document.getElementById("myText").value;
+  //document.write("p");
+            
+            // Convert to 32bit integer
+            function stringToHash(string) {
+                  
+                var hash = 0;
+                  
+                if (string.length == 0) return hash;
+                  
+                for (i = 0; i < string.length; i++) {
+                    char = string.charCodeAt(i);
+                    hash = ((hash << 5) - hash) + char;
+                    hash = hash & hash;
+                }
+                  
+                return hash;
+            }
+              
+            // String printing in hash
+            //var gfg = "GeeksforGeeks"
+              
+            document.getElementById("geek").innerHTML
+                        = stringToHash(p);
+  var p = document.getElementById("geek").innerHTML;
+    
+}
+        </script>
+<a href="MoreMenu.html" download>
+  snake hacks
+ </a>
+  </body>
+</html>

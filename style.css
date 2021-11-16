@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+   user-select: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+t {
+  text-align: left;
+}
+h3 {
+  text-align: center;
+}
+h4.user {
+  text-align: center;
+}
+p.tag{
+  font-size: 0px;
+  colot: white;
+}
+h9{
+  font-size: 2px;
+}
+a.rick{
+  color: black;
+  text-decoration: none;
+
+}
+
+
+
